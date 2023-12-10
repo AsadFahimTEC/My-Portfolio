@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo5.png";
+// import logo from "../assets/logo5.png";
 
 const NavBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -61,7 +61,7 @@ const NavBar = () => {
     <div
       className="navbar text-white relative"
       style={{
-        background: "linear-gradient(to right, #f06, #9f6)",
+        background: "#013747",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -95,7 +95,7 @@ const NavBar = () => {
             {navLinks}
           </animated.ul>
         </div>
-        <h6 className="normal-case text-black font-montserrat font-bold text-xl">
+        <h6 className="normal-case text-white font-montserrat font-bold text-xl">
           <animated.div
             style={useSpring({
               opacity: isDropdownOpen ? 0 : 1,
@@ -104,10 +104,10 @@ const NavBar = () => {
               }px)`,
             })}
           >
-            MyFolio
+            MD. <span className="text-yellow-400">Asaduzzaman</span>
           </animated.div>
         </h6>
-        <div className="ml-4">
+        {/* <div className="ml-4">
           <animated.img
             style={useSpring({
               transform: `scale(${isDropdownOpen ? 0.8 : 1})`,
@@ -117,7 +117,7 @@ const NavBar = () => {
             src={logo}
             alt="logo"
           />
-        </div>
+        </div> */}
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu font-avenir menu-horizontal px-1">{navLinks}</ul>

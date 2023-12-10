@@ -1,4 +1,5 @@
-import Sliders from "../Banner/Banner";
+
+import Banner from "../Banner/Banner";
 import Contact from "../ContactUs/Contact";
 import ContactUs from "../ContactUs/ContactUs";
 // import Services from "../Services/Services";
@@ -11,7 +12,7 @@ import Type from "../Type/Type";
 const Home = () => {
     return (
         <div>
-            <Sliders></Sliders>
+            <Banner></Banner>
             <Tabs></Tabs>
             <TouristStories></TouristStories>
             <Contact></Contact>
