@@ -1,39 +1,82 @@
-import Guides from "../Guides/Guides";
-import Packages from "../Packages/Packages";
 import "./Tabs.css";
+
 const Tabs = () => {
   return (
-    <div>
-      <div className="tabs">
-        <input type="radio" name="tabs" id="tab1" defaultChecked />
-        <label htmlFor="tab1">
-          <i className="fa fa-html5"></i>
-          <span>Overview</span>
-        </label>
-
-        <input type="radio" name="tabs" id="tab2" />
-        <label htmlFor="tab2">
-          <i className="fa fa-css3"></i>
-          <span>Packages</span>
-        </label>
-
-        <input type="radio" name="tabs" id="tab3" />
-        <label htmlFor="tab3">
-          <i className="fa fa-code"></i>
-          <span>Guides</span>
-        </label>
-
-        <div id="tab-content1" className="tab-content">
-          <h2>Amazing Winter Mountain Panorama</h2>
-          <iframe className="mt-2" width="560" height="315" src="https://www.shutterstock.com/video/clip-1022239741-amazing-beautiful-winter-caucasian-mountain-panorama-view" frameBorder="0" allowfullscreen autoPlay></iframe>
+    <div className="mt-4">
+      <div id="SkillBox">
+        <p className="text-center text-4xl">My Skills</p>
+        <img className="mx-auto"
+          src="https://2.bp.blogspot.com/--aPlnH6X1YA/UEf7yeJ3gGI/AAAAAAAATgw/TgMK9IVzipk/s1600/Skills%2B-%2BPawan%2BMall.png"
+          alt="Skill - Pawan Mall"
+        />
+        <div className="SkillBar">
+          <div id="Skill-HTML">
+            <span className="Skill-Area ">HTML5</span>
+            <span className="PercentText ">90%</span>
+          </div>
         </div>
 
-        <div id="tab-content2" className="tab-content">
-          <Packages></Packages>
+        <div className="SkillBar">
+          <div id="Skill-CSS">
+            <span className="Skill-Area ">CSS3</span>
+            <span className="PercentText ">70%</span>
+          </div>
         </div>
 
-        <div id="tab-content3" className="tab-content">
-          <Guides></Guides>
+        <div className="SkillBar">
+          <div id="Skill-jQuery">
+            <span className="Skill-Area ">JavaScript</span>
+            <span className="PercentText ">60%</span>
+          </div>
+        </div>
+
+        <div className="SkillBar">
+          <div id="Skill-JS">
+            <span className="Skill-Area ">ReactJS</span>
+            <span className="PercentText ">85%</span>
+          </div>
+        </div>
+
+        <div className="SkillBar">
+          <div id="Skill-XML">
+            <span className="Skill-Area ">ExpressJS</span>
+            <span className="PercentText ">80%</span>
+          </div>
+        </div>
+
+        <div className="SkillBar">
+          <div id="Skill-C">
+            <span className="Skill-Area ">MongoDB</span>
+            <span className="PercentText ">75%</span>
+          </div>
+        </div>
+
+        <div className="SkillBar">
+          <div id="Skill-JAVA">
+            <span className="Skill-Area ">NodeJS</span>
+            <span className="PercentText ">85%</span>
+          </div>
+        </div>
+
+        <div className="SkillBar">
+          <div id="Skill-PHP">
+            <span className="Skill-Area ">PHP </span>
+            <span className="PercentText ">50%</span>
+          </div>
+        </div>
+
+        <div className="SkillBar">
+          <div id="Skill-SQL">
+            <span className="Skill-Area ">SQL </span>
+            <span className="PercentText ">80%</span>
+          </div>
+        </div>
+
+        <div className="SkillBar">
+          <div id="Skill-VBNET">
+            <span className="Skill-Area ">C++</span>
+            <span className="PercentText ">75%</span>
+          </div>
         </div>
       </div>
     </div>
