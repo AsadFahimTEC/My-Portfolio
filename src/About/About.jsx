@@ -1,7 +1,6 @@
+import "./About.css";
 
-import "./Banner.css";
-
-const Banner = () => {
+const About = () => {
   return (
     <div className="mt-4">
       <div className="about-me" id="about-me">
@@ -62,19 +61,18 @@ const Banner = () => {
         </div>
       </div>
 
-      
-        <div className="portfolio-link">
-          <a
-            href="https://657694fe458d3727d144171a--creative-meerkat-68dfbc.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            My Portfolio{" "}
-          </a>
-        </div>
+      <div className="portfolio-link">
+        <a
+          href="https://657694fe458d3727d144171a--creative-meerkat-68dfbc.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          My Portfolio{" "}
+        </a>
+      </div>
     </div>
   );
 };
 
-export default Banner;
+export default About;

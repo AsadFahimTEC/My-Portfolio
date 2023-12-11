@@ -19,6 +19,8 @@ import MyWishList from "../Dashboard/MyWishList";
 // import Type from "../Type/Type";
 import TourGuideProfile from "../Service/TourGuideProfie";
 import BookingForm from "../Service/ServiceDetails/BookingForm";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
 // import { BookingProvider } from "../Service/ServiceDetails/BookingContext";
 
 
@@ -33,6 +35,14 @@ import BookingForm from "../Service/ServiceDetails/BookingForm";
           path: "/",
           element: <Home></Home>,
           loader: () => fetch("/packages.json"),
+        },
+        {
+          path: "/about",
+          element: <About></About>,
+        },
+        {
+          path: "/contact",
+          element: <Contact></Contact>,
         },
         {
             path: "/service/:id",

@@ -5,8 +5,8 @@ const Education = () => {
   return (
     <div>
       <div className="mt-3">
-        <h3 className="section-title text-xl text-green-600 text-center">A summary of My Resume</h3>
-        <div className="resume-container">
+        <h3 className="section-title text-3xl text-green-600 text-center">A summary of My Resume</h3>
+        <div className="resume-container ml-10 mr-10">
           <div className="resume-column">
             <h3 className="resume-column-title">My Education</h3>
 

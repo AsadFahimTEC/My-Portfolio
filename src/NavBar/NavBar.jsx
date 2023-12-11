@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 const NavBar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+
   const dropdownAnimation = useSpring({
     opacity: isDropdownOpen ? 1 : 0,
     transform: `scale(${isDropdownOpen ? 1 : 0.8}) translateY(${
@@ -64,8 +65,9 @@ const NavBar = () => {
         background: "#00000",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        // height: "10vh",
+        // height: "30vh",
         width: "full",
+        // height: "full",
       }}
     >
       <div className="navbar-start">

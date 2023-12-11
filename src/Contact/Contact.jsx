@@ -1,20 +1,22 @@
-
-import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-import './ContactUs.css';
-
-const ContactUs = () => {
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./Contact.css";
+const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
 
     try {
       // Replace 'your_service_id', 'your_template_id', and 'your_user_id' with your actual values
-      await emailjs.sendForm('service_39dz78i', 'template_gl3794m', e.target, 'GoLWkqT_l28QGncbm');
+      await emailjs.sendForm(
+        "service_39dz78i",
+        "template_gl3794m",
+        e.target,
+        "GoLWkqT_l28QGncbm"
+      );
 
-      toast.success('Message sent successfully!', {
-        position: 'top-right',
+      toast.success("Message sent successfully!", {
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -24,12 +26,11 @@ const ContactUs = () => {
       });
 
       // You can add additional logic here if needed
-
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error sending email:", error);
 
-      toast.error('Error sending message. Please try again later.', {
-        position: 'top-right',
+      toast.error("Error sending message. Please try again later.", {
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -39,7 +40,6 @@ const ContactUs = () => {
       });
     }
   };
-
   return (
     <div className="mt-4">
       <div className="contact-container">
@@ -55,7 +55,9 @@ const ContactUs = () => {
             <label htmlFor="message">Your Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button className='button' type="submit">Send Message</button>
+            <button className="button" type="submit">
+              Send Message
+            </button>
           </form>
         </div>
         <div className="info-container">
@@ -73,4 +75,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;
