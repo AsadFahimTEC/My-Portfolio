@@ -61,9 +61,11 @@ const NavBar = () => {
     <div
       className="navbar text-white relative"
       style={{
-        background: "#013747",
+        background: "#00000",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        // height: "10vh",
+        width: "full",
       }}
     >
       <div className="navbar-start">
