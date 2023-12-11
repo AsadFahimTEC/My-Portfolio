@@ -16,7 +16,7 @@ import TouristStories from "../TourStory/TourStory";
 import MyProfile from "../Dashboard/MyProfile";
 import MyBookings from "../Dashboard/MyBookings";
 import MyWishList from "../Dashboard/MyWishList";
-import Type from "../Type/Type";
+// import Type from "../Type/Type";
 import TourGuideProfile from "../Service/TourGuideProfie";
 import BookingForm from "../Service/ServiceDetails/BookingForm";
 // import { BookingProvider } from "../Service/ServiceDetails/BookingContext";
@@ -174,7 +174,7 @@ import BookingForm from "../Service/ServiceDetails/BookingForm";
           path: "/services/:tab",
           element: (
             <PrivateRoute>
-          <Type></Type>
+          {/* <Type></Type> */}
           </PrivateRoute>
           ),
           loader: () => fetch("/AllService.json"),
