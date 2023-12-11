@@ -6,20 +6,17 @@ const Footer = () => {
     <div>
       <footer className="flex flex-col space-y-10 justify-center m-10">
         <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
-          <h6 className="normal-case text-[#000] font-montserrat font-bold text-xl">
-            JourneyJive
+          <h6 className="normal-case text-white font-montserrat font-bold text-xl">
+            MD. <span className="text-yellow-600">Asaduzzaman</span>
           </h6>
-          <div className="ml-4 -mt-6">
-            <img className="w-20 h-16 sm:w-24 sm:h-20" src={logo} alt="logo" />
-          </div>
-          <Link className="hover:text-gray-900" to="/">
+          <Link className="hover:text-red-600" to="/">
             Home
           </Link>
-          <Link className="hover:text-gray-900" to="/services">
-            Packages
+          <Link className="hover:text-red-600" to="/about">
+            About Me
           </Link>
-          <Link className="hover:text-gray-900" to="/media">
-            Media
+          <Link className="hover:text-red-600" to="/contact">
+            Contact Me
           </Link>
         </nav>
 
@@ -61,7 +58,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-center text-gray-700 font-medium">
-          &copy; 2023 PeoplePro Company Ltd. All rights reserved.
+          &copy; 2023 MD. <span className="text-yellow-600">Asaduzzaman</span> All rights reserved.
         </p>
       </footer>
     </div>
