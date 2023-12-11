@@ -39,8 +39,7 @@ const Banner = () => {
     </div>
 
     <div className="portfolio-link">
-      <a href="https://smit-prajapati.github.io/prajapatismit/" target="_blank" rel="noopener noreferrer"> My Portfolio </a>
-      <a href="https://dribbble.com/shots/18565056-Tommy-Hans-Personal-Portfolio-Landing-Page-Website?utm_source=Clipboard_Shot&utm_campaign=Adhiari_is&utm_content=Tommy%20Hans%20-%20Personal%20Portfolio%20Landing%20Page%20Website&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=Adhiari_is&utm_content=Tommy%20Hans%20-%20Personal%20Portfolio%20Landing%20Page%20Website&utm_medium=Social_Share" target="_blank" rel="noopener noreferrer"> UI Design by Tommy Hans </a>
+      <a href="https://657694fe458d3727d144171a--creative-meerkat-68dfbc.netlify.app" target="_blank" rel="noopener noreferrer"> My Portfolio </a>
     </div>
    </div>
   );
