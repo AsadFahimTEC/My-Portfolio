@@ -1,155 +1,79 @@
-import { useState } from "react";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// Install required packages:
+// npm install emailjs-com react-toastify
 
-import "./ContactUs.css";
+// ContactUs.jsx
+
+import React from 'react';
+import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import './ContactUs.css';
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    mobile: "",
-    message: "",
-  });
-
-  const handleSubmit = async (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-  
+
     try {
-      const response = await fetch("/.netlify/functions/submitForm", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      // Replace 'your_service_id', 'your_template_id', and 'your_user_id' with your actual values
+      await emailjs.sendForm('service_39dz78i', 'template_gl3794m', e.target, 'GoLWkqT_l28QGncbm');
+
+      toast.success('Message sent successfully!', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
       });
-  
-      if (response.ok) {
-        const contentType = response.headers.get("content-type");
-        if (contentType && contentType.includes("application/json")) {
-          const responseData = await response.json();
-          console.log("Form data sent successfully:", responseData);
-          toast.success("Form data sent successfully!");
-          // Optionally, you can reset the form fields after successful submission
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            mobile: "",
-            message: "",
-          });
-        } else {
-          console.error("Response does not contain valid JSON data");
-          toast.error("Error: Unexpected response from the server");
-        }
-      } else {
-        console.error("Error sending form data. Response status:", response.status);
-        const responseData = await response.json();
-        console.error("Response data:", responseData);
-        toast.error(
-          `Error sending form data: ${responseData.error || "Unknown error"}`
-        );
-      }
+
+      // You can add additional logic here if needed
+
     } catch (error) {
-      console.error("Error:", error.message);
-      toast.error(`Error: ${error.message}`);
+      console.error('Error sending email:', error);
+
+      toast.error('Error sending message. Please try again later.', {
+        position: 'top-right',
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
-  
 
   return (
-    <div>
-      <div className="container">
-        <h2>Contact Me</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="row100">
-            <div className="col">
-              <div className="inputBox">
-                <input
-                  type="text"
-                  name="firstName"
-                  required="required"
-                  value={formData.firstName}
-                  onChange={(e) =>
-                    setFormData({ ...formData, firstName: e.target.value })
-                  }
-                />
-                <span className="text">First Name</span>
-                <span className="line"></span>
-              </div>
-            </div>
-            <div className="col">
-              <div className="inputBox">
-                <input
-                  type="text"
-                  name="lastName"
-                  required="required"
-                  value={formData.lastName}
-                  onChange={(e) =>
-                    setFormData({ ...formData, lastName: e.target.value })
-                  }
-                />
-                <span className="text">Last Name</span>
-                <span className="line"></span>
-              </div>
-            </div>
-          </div>
-          <div className="row100">
-            <div className="col">
-              <div className="inputBox">
-                <input
-                  type="text"
-                  name="email"
-                  required="required"
-                  value={formData.email}
-                  onChange={(e) =>
-                    setFormData({ ...formData, email: e.target.value })
-                  }
-                />
-                <span className="text">Email</span>
-                <span className="line"></span>
-              </div>
-            </div>
-            <div className="col">
-              <div className="inputBox">
-                <input
-                  type="text"
-                  name="mobile"
-                  required="required"
-                  value={formData.mobile}
-                  onChange={(e) =>
-                    setFormData({ ...formData, mobile: e.target.value })
-                  }
-                />
-                <span className="text">Mobile</span>
-                <span className="line"></span>
-              </div>
-            </div>
-          </div>
-          <div className="row100">
-            <div className="col">
-              <div className="inputBox textarea">
-                <textarea
-                  required="required"
-                  name="message"
-                  value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
-                ></textarea>
-                <span className="text">Type your message Here...</span>
-                <span className="line"></span>
-              </div>
-            </div>
-          </div>
-          <div className="row100">
-            <div className="col">
-              <input type="submit" value="Send" />
-            </div>
-          </div>
-        </form>
+    <div className="mt-4">
+      <div className="contact-container">
+        <div className="form-container">
+          <h2 className="text-center text-2xl">Contact Us</h2>
+          <form onSubmit={sendEmail}>
+            <label htmlFor="name">Your Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label htmlFor="email">Your Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label htmlFor="message">Your Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button className='button' type="submit">Send Message</button>
+          </form>
+        </div>
+        <div className="info-container">
+          <h2 className="text-xl">Contact Information</h2>
+          <p>
+            <strong>Phone:</strong> +880 179 083 3542
+          </p>
+          <p>
+            <strong>Email:</strong> fah485434@gmail.com
+          </p>
+        </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
