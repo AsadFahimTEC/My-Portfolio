@@ -60,12 +60,12 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="info-container">
-          <h2 className="text-xl">Contact Information</h2>
-          <p>
+        <div className="info-container text-center md:text-left">
+          <h2 className="text-xl mb-4 md:mb-6 md:text-lg">Contact Information</h2>
+          <p className="mb-2">
             <strong>Phone:</strong> +880 179 083 3542
           </p>
-          <p>
+          <p className="mb-4">
             <strong>Email:</strong> fah485434@gmail.com
           </p>
         </div>

@@ -38,11 +38,11 @@ const About = () => {
                   />
                 </div>
                 <div className="text">
-                  An ambitious Front-end Developer and designer who takes great
+                  An ambitious Junior Web Developer and designer who takes great
                   pride in the presentation and quality of work.
                   <br />
                   <br />
-                  Smit is someone who can design and create simple, beautiful
+                  MD. Asaduzzaman is someone who can design and create simple, beautiful
                   and easy to understand things. He is an expert at taking
                   designs into original, exciting and new directions.
                 </div>
@@ -50,7 +50,7 @@ const About = () => {
             </div>
 
             <div className="mail-button mail-button2">
-              <a href="mailto:prajapatismit2906@gmail.com">
+              <a href="mailto:fah485434@gmail.com">
                 <img
                   src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/20391be8bf1ed24ef0e5da066bf68a5f6ee78fa1/images/mail.svg"
                   alt="Mail"
@@ -63,7 +63,7 @@ const About = () => {
 
       <div className="portfolio-link">
         <a
-          href="https://657694fe458d3727d144171a--creative-meerkat-68dfbc.netlify.app"
+          href="https://mdasaduzzamanportfolio.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
         >
