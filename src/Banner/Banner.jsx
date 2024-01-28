@@ -17,7 +17,7 @@ const Banner = () => {
                     alt="Black Background"
                   />
                 </div>
-                <div className="main-image">
+                <div className="main-image mr-12 ml-12">
                   <img src="https://i.ibb.co/nBYsmzS/Asad.png" />
                   <h3 className="text-center text-blue-500">
                     Name: MD. Asaduzzaman

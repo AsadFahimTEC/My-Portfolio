@@ -17,7 +17,7 @@ const About = () => {
                     alt="Black Background"
                   />
                 </div>
-                <div className="main-image">
+                <div className="main-image mr-12 ml-12">
                   <img src="https://i.ibb.co/nBYsmzS/Asad.png" />
                   <h3 className="text-center text-blue-500">
                     Name: MD. Asaduzzaman
@@ -42,9 +42,9 @@ const About = () => {
                   pride in the presentation and quality of work.
                   <br />
                   <br />
-                  MD. Asaduzzaman is someone who can design and create simple, beautiful
-                  and easy to understand things. He is an expert at taking
-                  designs into original, exciting and new directions.
+                  MD. Asaduzzaman is someone who can design and create simple,
+                  beautiful and easy to understand things. He is an expert at
+                  taking designs into original, exciting and new directions.
                 </div>
               </div>
             </div>
@@ -59,17 +59,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="portfolio-link">
-        <a
-          href="https://mdasaduzzamanportfolio.netlify.app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          My Portfolio{" "}
-        </a>
       </div>
     </div>
   );
