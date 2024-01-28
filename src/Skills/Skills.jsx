@@ -2,7 +2,7 @@ import './Skills.css';
 const Skills = () => {
   return (
     <div className="mt-2">
-      <h2 className="text-center text-3xl text-purple-300 hover:text-red-400">
+      <h2 className="text-center text-4xl text-purple-300 hover:text-red-400">
         My Skills
       </h2>
       <div className="marquee mt-2">

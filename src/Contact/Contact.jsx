@@ -60,15 +60,17 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="info-container mx-4 sm:mx-0 lg:ml-6 sm:ml-0">
-          <h2 className="text-lg">Contact Information</h2>
+        {/* <div className="info-container">
+          <h2 className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl">
+            Contact Information
+          </h2>
           <p>
             <strong>Phone:</strong> +880 179 083 3542
           </p>
           <p>
-            <strong>Email:</strong> fah485434@gmail.com
-          </p>
-        </div>
+          <strong>Email:</strong> fah485434@gmail.com
+        </p>
+        </div> */}
       </div>
       <ToastContainer />
     </div>

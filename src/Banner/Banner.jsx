@@ -1,4 +1,3 @@
-
 import "./Banner.css";
 
 const Banner = () => {
@@ -43,9 +42,9 @@ const Banner = () => {
                   pride in the presentation and quality of work.
                   <br />
                   <br />
-                  MD. Asaduzzaman is someone who can design and create simple, beautiful
-                  and easy to understand things. He is an expert at taking
-                  designs into original, exciting and new directions.
+                  MD. Asaduzzaman is someone who can design and create simple,
+                  beautiful and easy to understand things. He is an expert at
+                  taking designs into original, exciting and new directions.
                 </div>
               </div>
             </div>
@@ -61,18 +60,6 @@ const Banner = () => {
           </div>
         </div>
       </div>
-
-      
-        <div className="portfolio-link">
-          <a
-            href="https://mdasaduzzamanportfolio.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            My Portfolio{" "}
-          </a>
-        </div>
     </div>
   );
 };

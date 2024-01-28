@@ -17,8 +17,8 @@
 }
 
 .marquee-item {
-  flex: 0 0 10%; /* Each item takes 100% width */
-  margin-right: 2vw; /* Adjust the margin between items */
+  flex: 0 0 15%; /* Each item takes 100% width */
+   /* Adjust the margin between items */
 }
 
 .marquee-item:last-child {

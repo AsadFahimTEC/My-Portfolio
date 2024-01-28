@@ -1,9 +1,8 @@
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
-import './ContactUs.css';
+import "./ContactUs.css";
 
 const ContactUs = () => {
   const sendEmail = async (e) => {
@@ -11,10 +10,15 @@ const ContactUs = () => {
 
     try {
       // Replace 'your_service_id', 'your_template_id', and 'your_user_id' with your actual values
-      await emailjs.sendForm('service_39dz78i', 'template_gl3794m', e.target, 'GoLWkqT_l28QGncbm');
+      await emailjs.sendForm(
+        "service_39dz78i",
+        "template_gl3794m",
+        e.target,
+        "GoLWkqT_l28QGncbm"
+      );
 
-      toast.success('Message sent successfully!', {
-        position: 'top-right',
+      toast.success("Message sent successfully!", {
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -24,12 +28,11 @@ const ContactUs = () => {
       });
 
       // You can add additional logic here if needed
-
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error sending email:", error);
 
-      toast.error('Error sending message. Please try again later.', {
-        position: 'top-right',
+      toast.error("Error sending message. Please try again later.", {
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -55,18 +58,22 @@ const ContactUs = () => {
             <label htmlFor="message">Your Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button className='button' type="submit">Send Message</button>
+            <button className="button" type="submit">
+              Send Message
+            </button>
           </form>
         </div>
-        <div className="info-container mx-4 sm:mx-0 lg:ml-6 sm:ml-0">
-          <h2 className="text-lg">Contact Information</h2>
+        {/* <div className="info-container">
+          <h2 className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl">
+            Contact Information
+          </h2>
           <p>
             <strong>Phone:</strong> +880 179 083 3542
           </p>
           <p>
             <strong>Email:</strong> fah485434@gmail.com
           </p>
-        </div>
+        </div> */}
       </div>
       <ToastContainer />
     </div>
