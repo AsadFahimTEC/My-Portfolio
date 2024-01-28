@@ -41,7 +41,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className="mt-4">
+    <div className="mt-4 ml-12 mr-12">
       <div className="contact-container">
         <div className="form-container">
           <h2 className="text-center text-2xl">Contact Us</h2>
@@ -60,12 +60,12 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="info-container text-center md:text-left">
-          <h2 className="text-xl mb-4 md:mb-6 md:text-lg">Contact Information</h2>
-          <p className="mb-2">
+        <div className="info-container mx-4 sm:mx-0 lg:ml-6 sm:ml-0">
+          <h2 className="text-lg">Contact Information</h2>
+          <p>
             <strong>Phone:</strong> +880 179 083 3542
           </p>
-          <p className="mb-4">
+          <p>
             <strong>Email:</strong> fah485434@gmail.com
           </p>
         </div>

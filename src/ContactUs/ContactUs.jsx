@@ -41,7 +41,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 ml-12 mr-12">
       <div className="contact-container">
         <div className="form-container">
           <h2 className="text-center text-2xl">Contact Us</h2>
@@ -58,8 +58,8 @@ const ContactUs = () => {
             <button className='button' type="submit">Send Message</button>
           </form>
         </div>
-        <div className="info-container">
-          <h2 className="text-xl">Contact Information</h2>
+        <div className="info-container mx-4 sm:mx-0 lg:ml-6 sm:ml-0">
+          <h2 className="text-lg">Contact Information</h2>
           <p>
             <strong>Phone:</strong> +880 179 083 3542
           </p>
